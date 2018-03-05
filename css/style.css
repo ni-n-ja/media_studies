@@ -1,0 +1,465 @@
+@charset "utf-8";
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #FFF;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.coma {
+    position: absolute;
+    border: solid 1px black;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.container {
+    width: 580px;
+    height: 1000px;
+    position: relative;
+    border: solid 1px black;
+}
+
+.big {
+    font-size: 180px;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bell_anime {
+    animation: bell_vi 0.1s linear infinite;
+    position: relative;
+}
+
+@keyframes bell_vi {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 10px;
+    }
+}
+
+.bed_fade {
+    animation: bed_fade 1s ease 0s 1 forwards;
+}
+
+@keyframes bed_fade {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+.bed_w_fade {
+    animation: bed_w_fade 2s ease 0s 1 forwards;
+}
+
+@keyframes bed_w_fade {
+    0% {
+        background-color: black;
+    }
+    50% {
+        background-color: black;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+.disable {
+    display: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.man_go_down {
+    animation: man_go_down 2s ease 0s 1 forwards;
+}
+
+@keyframes man_go_down {
+    0% {
+        top: 20px;
+    }
+    100% {
+        top: 500px;
+    }
+}
+
+.man_to_center {
+    animation: man_to_center 4s ease 0s 1 forwards;
+}
+
+@keyframes man_to_center {
+    0% {
+        top: -240px;
+    }
+    100% {
+        top: 60px;
+    }
+}
+
+.phone_fade_in {
+    animation: phone_fade_in 1s ease 0s 1 forwards;
+}
+
+@keyframes phone_fade_in {
+    50% {
+        color: white;
+    }
+    100% {
+        color: black;
+    }
+}
+
+.phone_fade_out {
+    animation: phone_fade_out 1s ease 0s 1 forwards;
+}
+
+@keyframes phone_fade_out {
+    50% {
+        color: black;
+    }
+    100% {
+        color: white;
+    }
+}
+
+.phone_speak {
+    animation: phone_speak .2s ease 0s infinite;
+}
+
+@keyframes phone_speak {
+    0% {
+        transform: rotateZ(20deg);
+    }
+    50% {
+        transform: rotateZ(-20deg);
+    }
+    100% {
+        transform: rotateZ(20deg);
+    }
+}
+
+.key_down {
+    animation: key_down 3s ease 0s 1 forwards;
+}
+
+.folder_down {
+    animation: folder_down 3s ease 0s 1 forwards;
+}
+
+.univ_down {
+    animation: univ_down 3s ease 0s 1 forwards;
+}
+
+.money_down {
+    animation: money_down 3s ease 0s 1 forwards;
+}
+
+@keyframes key_down {
+    0% {
+        top: 100px;
+    }
+    100% {
+        top: 300px;
+    }
+}
+
+@keyframes folder_down {
+    0% {
+        top: 40px;
+    }
+    100% {
+        top: 240px;
+    }
+}
+
+@keyframes univ_down {
+    0% {
+        color: black;
+        top: 30px;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: white;
+        top: 240px;
+    }
+}
+
+@keyframes money_down {
+    0% {
+        top: -320px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.man_go_left {
+    animation: man_go_left 2s ease 0s 1 forwards;
+}
+
+@keyframes man_go_left {
+    0% {
+        left: -30px;
+    }
+    100% {
+        left: -500px;
+    }
+}
+
+.middle {
+    font-size: 90px;
+}
+
+.man_right_to_left {
+    animation: man_right_to_left 5s linear 0s infinite;
+}
+
+@keyframes man_right_to_left {
+    0% {
+        left: 1500px;
+    }
+    100% {
+        left: -500px;
+    }
+}
+
+.man_left_to_right {
+    animation: man_left_to_right 5s linear 0s infinite;
+}
+
+@keyframes man_left_to_right {
+    0% {
+        left: -500px;
+    }
+    100% {
+        left: 1500px;
+    }
+}
+
+.car_in {
+    top: 60px;
+    animation: car_in 5s linear 0s 1 forwards;
+}
+
+@keyframes car_in {
+    0% {
+        left: 520px;
+    }
+    50% {
+        top: 60px;
+    }
+    100% {
+        top: -100px;
+        left: 100px;
+    }
+}
+
+.secret_user_2_move {
+    animation: secret_user_2 1s linear 0s 1 forwards;
+}
+
+@keyframes secret_user_2 {
+    0% {
+        top: 300px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 0px;
+    }
+}
+
+.secret_user_2_move_second {
+    animation: secret_user_2_second 1s linear 0s 1 forwards;
+}
+
+@keyframes secret_user_2_second {
+    0% {
+        transform: rotateZ(10deg);
+        opacity: 0;
+        top: 0px;
+    }
+    20% {
+        transform: rotateZ(-10deg);
+        opacity: 1;
+    }
+    40% {
+        transform: rotateZ(10deg);
+    }
+    60% {
+        transform: rotateZ(-10deg);
+    }
+    80% {
+        transform: rotateZ(10deg);
+    }
+    100% {
+        transform: rotateZ(-10deg);
+        top: 300px;
+    }
+}
+
+.univ_alert {
+    animation: univ_alert 1s linear 0s infinite;
+}
+
+@keyframes univ_alert {
+    0% {
+        color: red;
+    }
+    100% {
+        color: black;
+    }
+}
+
+.car_out {
+    animation: car_out 1s linear 0s 1 forwards;
+}
+
+@keyframes car_out {
+    0% {
+        top: -100px;
+        left: 100px;
+    }
+    100% {
+        top: 500px;
+        left: 100px;
+    }
+}
+
+.police {
+    position: absolute;
+    top: -120px;
+}
+
+.police_move {
+    animation: police_move 2s linear 0s 1 forwards;
+}
+
+@keyframes police_move {
+    0% {
+        top: -120px;
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: red;
+    }
+    75% {
+        color: blue;
+    }
+    100% {
+        top: 500px;
+        color: red;
+    }
+}
+
+.car2_move {
+    animation: car2_move .3s linear 0s 1 forwards;
+}
+
+@keyframes car2_move {
+    0% {
+        left: 530px;
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(360deg);
+    }
+    75% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        left: 0px;
+        transform: rotateZ(200deg);
+    }
+}
+
+.ambulance {
+    animation: ambulance 4s linear 0s 1 forwards;
+}
+
+@keyframes ambulance {
+    0% {
+        left: 530px;
+        color: red;
+    }
+    25% {
+        color: black;
+    }
+    50% {
+        color: red;
+    }
+    75% {
+        color: black;
+    }
+    100% {
+        left: 100px;
+        color: red;
+    }
+}
+
+.div {
+    animation: div .3s linear 0s 1 forwards;
+}
+
+@keyframes div {
+    0% {
+        top: 590px;
+    }
+    25% {
+        top: 610px;
+    }
+    50% {
+        top: 590px;
+    }
+    75% {
+        top: 570px;
+    }
+    100% {
+        top: 590px;
+    }
+}
